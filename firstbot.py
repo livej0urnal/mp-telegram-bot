@@ -4,6 +4,7 @@ from telebot import types
 
 bot = telebot.TeleBot('1863460136:AAEqo1krS1Po9BR7RyVquLMfHqrP--t8teI')
 
+bot.remove_webhook()
 
 @bot.message_handler(commands=['website'])
 def open_website(message):
